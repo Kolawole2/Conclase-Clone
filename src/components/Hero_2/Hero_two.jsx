@@ -9,7 +9,7 @@ import Advantage from "../../assets/assets_two/Advantage.png";
 import family from "../../assets/assets_two/family.png";
 import Hiring_process from "../../assets/assets_two/Hiring_process.png";
 import dim_logo from "../../assets/assets_two/dim_logo.png";
-import consultant from "../../assets/assets_two/consultant.png";
+import consultant from "../../assets/assets_two/Consultant.png";
 
 const Hero_two = () => {
   return (
