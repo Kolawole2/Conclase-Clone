@@ -98,7 +98,7 @@ const Hero = () => {
       <div className="w-full bg-white rounded-t-[60px] text-center mt-16 py-12">
         <h2 className="text-3xl md:text-4xl font-medium">Our Clients</h2>
 
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600 mt-4 text-sm sm:text-lg lg:text-xl px-2">
           We are trusted by clients who generated more than $10M from our
           solutions
         </p>
