@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0E2455] text-white px-6">
 
-      <div className="max-w-7xl mx-auto py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="max-w-7xl mx-auto py-4 sm:py-8 md:py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
         {/* Company */}
         <div>
@@ -47,6 +47,15 @@ const Footer = () => {
             7833 Rosewood St Burnaby, British Columbia
           </p>
           <p className="mt-2">+1 (778) 288-9846</p>
+          <a href="#"><p className="font-semibold cursor-pointer mt-3">Hello@conclase.ca</p></a>
+
+          <h3 className="text-yellow-400 mb-6 mt-8">Middle East</h3>
+          <p>U.A.E</p>
+          <p className="mt-2">
+            Business Center 1, M floor, The Meydan Hotel, Nad Al, Sheba, Dubai, U.A.E
+          </p>
+          <p className="mt-2">+971 582 625 411</p>
+          <a href="#"><p className="font-semibold cursor-pointer mt-3">Hello@conclase.ae</p></a>
         </div>
 
         {/* Social */}
@@ -57,7 +66,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="py-16">
+      <div className="py-4 sm:py-8 md:py-17">
         <img src={conclasehq} className="w-full"/>
       </div>
 

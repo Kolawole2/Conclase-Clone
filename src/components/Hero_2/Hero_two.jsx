@@ -10,6 +10,8 @@ import family from "../../assets/assets_two/family.png";
 import Hiring_process from "../../assets/assets_two/Hiring_process.png";
 import dim_logo from "../../assets/assets_two/dim_logo.png";
 import consultant from "../../assets/assets_two/Consultant.png";
+import { MdArrowForward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 
 const Hero_two = () => {
   return (
@@ -24,8 +26,8 @@ const Hero_two = () => {
         </div>
         {/* second text */}
         <div className="flex flex-row justify-between max-w-7xl text-black/65 gap-1 text-3xl md:text-4xl lg:text-5xl font-bold">
-          <span>Access</span>
-          <span className="text-yellow-400">Top Tier-Tech</span>
+          <span className="lg:mr-2 mr-1">Access</span>
+          <span className="text-yellow-400 lg:mr-2 mr-1">Top Tier-Tech</span>
           <span>Talent</span>
         </div>
         {/* third text */}
@@ -44,7 +46,9 @@ const Hero_two = () => {
         </div>
         {/* Talent request */}
         <div className="mt-10 flex items-center justify-center px-25 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
-          <span className="font-semibold">Request for a Talent</span>
+          <a href="/request/one">
+            <span className="font-semibold">Request for a Talent</span>
+          </a>
         </div>
         {/* Examples */}
         <div className="py-3 w-full">
@@ -128,7 +132,7 @@ const Hero_two = () => {
               </p>
             </div>
           </div>
-          <div className="py-20 w-full flex justify-center lg:justify-end">
+          <div className="py-6 sm:py-12 md:py-20 w-full flex justify-center lg:justify-end">
             <img src={family} className=""></img>
           </div>
         </div>
@@ -152,9 +156,11 @@ const Hero_two = () => {
         <div className="py-4 sm:py-10">
           <img src={Hiring_process}></img>
         </div>
-        <div className="mb-10 flex items-center justify-center px-25 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
-          <span className="font-semibold">Request for a Talent</span>
-        </div>
+        <a href="/request/one">
+          <div className="mb-10 flex items-center justify-center px-25 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
+            <span className="font-semibold">Request for a Talent</span>
+          </div>
+        </a>
       </div>
       {/* Schedule consultation */}
       <div className="bg-white flex items-center justify-center flex-col">
@@ -171,6 +177,11 @@ const Hero_two = () => {
             with our talent acquisition specialist
           </p>
         </div>
+        <a href="/request/one">
+          <div className="mt-5 xl:mt-9 xl:mb-5 flex items-center justify-center px-25 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
+            <span className="font-semibold">Book a Meeting</span>
+          </div>
+        </a>
         {/* Consultation cards */}
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -180,7 +191,7 @@ const Hero_two = () => {
             </div>
 
             {/* Contact Card */}
-            <div className="bg-gray-100 border rounded-2xl p-10 flex flex-col justify-between">
+            <div className="bg-gray-100 border-1 border-gray-200 rounded-2xl p-10 flex flex-col justify-between">
               {/* Top text */}
               <div>
                 <span className="text-gray-400 uppercase text-sm font-semibold tracking-wide">
@@ -194,12 +205,15 @@ const Hero_two = () => {
 
               {/* Bottom section */}
               <div className="flex items-end justify-between mt-10">
-                <button className="flex items-center gap-3 px-20 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 font-semibold">
-                  Contact Us
-                  <span>↗</span>
-                </button>
+                <a href="/contact"><div className="flex text-center items-end gap-3 sm:gap-5 lg:gap-9 justify-between  mb-3 sm:mb-1 lg:mb-4 cursor-pointer group px-10 sm:px-20 lg:px-10 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 font-semibold">
+                  <span className="flex  text-[12px] sm:text-[17px] md:text-[14px] lg:text-[17px]">
+                    Contact Us
+                  </span>
+                  <MdArrowOutward className="group-hover:hidden mb-0 sm:mb-1 md:mb-0.5 lg:mb-1" />
+                  <MdArrowForward className="hidden group-hover:block mb-0 sm:mb-1 md:mb-0.5 lg:mb-1" />
+                </div></a>
 
-                <img src={dim_logo} className="w-28 opacity-40" />
+                <img src={dim_logo} className="w-28 opacity-40 lg:w-40" />
               </div>
             </div>
           </div>

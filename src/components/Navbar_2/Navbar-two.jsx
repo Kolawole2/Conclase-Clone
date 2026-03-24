@@ -10,31 +10,31 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const DropdownLink_one = [
-    { id: 1, name: "Hire a Talent", link: "/#" },
-    { id: 2, name: "Submit a Resume", link: "/#" },
-    { id: 3, name: "Software Development", link: "/#" },
+    { id: 1, name: "Hire a Talent", link: "/hiring" },
+    { id: 2, name: "Submit a Resume", link: "/submit" },
+    { id: 3, name: "Software Development", link: "/software/dev" },
   ];
 
   const DropdownLink_two = [
-    { id: 1, name: "Candle LMS", link: "/#" },
-    { id: 2, name: "Enovate", link: "/#" },
-    { id: 3, name: "Conclase Jobs", link: "/#" },
-    { id: 4, name: "Tech Studio", link: "/#" },
+    { id: 1, name: "Candle LMS", link: "" },
+    { id: 2, name: "Enovate", link: "" },
+    { id: 3, name: "Conclase Jobs", link: "" },
+    { id: 4, name: "Tech Studio", link: "" },
   ];
 
   const DropdownLink_three = [
-    { id: 1, name: "Conclase Academy", link: "/#" },
-    { id: 2, name: "Conclase US", link: "/#" },
-    { id: 3, name: "Corporate Training", link: "/#" },
+    { id: 1, name: "Conclase Academy", link: "" },
+    { id: 2, name: "Conclase US", link: "" },
+    { id: 3, name: "Corporate Training", link: "/corporatetraining" },
   ];
 
   return (
     <header className="w-full bg-white flex justify-center">
       <nav className="w-full max-w-7xl flex items-center justify-between px-4 py-4 relative z-50">
         {/* Logo */}
-        <div className="flex items-center">
+        <a href="/"><div className="flex items-center">
           <img src={three} className="h-13 w-auto" />
-        </div>
+        </div></a>
 
         {/* Menu */}
         <div className="hidden md:flex items-center  gap-10 bg-gray-100 px-8 py-4 rounded-full ">
@@ -113,9 +113,9 @@ const Navbar = () => {
         <div className="border-gray-300 border-1 text-blue-800 px-6 py-4 rounded-full cursor-pointer">
           Submit a resume
         </div>
-        <div className=" bg-gray-200 text-blue-800 px-7 py-4 rounded-full cursor-pointer">
+        <a href="/contact"><div className=" bg-gray-200 text-blue-800 px-7 py-4 rounded-full cursor-pointer">
           Contact Us
-        </div>
+        </div></a>
         </div>
 
         {/* For smaller screen */}

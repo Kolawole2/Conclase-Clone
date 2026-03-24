@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       {/* first slider */}
-      <div className="group relative w-full max-w-7xl overflow-hidden bg-white px-6 mx-auto mt-10 md:mt-13 rounded-2xl">
+      <div className="group relative w-full max-w-7xl overflow-hidden bg-white px-6 mx-auto mt-4 md:mt-13 rounded-2xl">
         <div className="top-0 left-0 flex items-center justify-center text-white rounded-2xl">
           <img src={recruitment} className="w-full md:w-auto rounded-2xl" />
         </div>
@@ -37,15 +37,19 @@ const About = () => {
           </span>
 
           <div className="flex md:flex-row gap-6 md:gap-9 mt-7">
-            <div className="border border-gray-700 rounded-2xl w-40 md:w-50 flex flex-col gap-4 items-center justify-center cursor-pointer py-4">
-              <img src={user} className="mt-2" />
-              <span className="font-semibold">Hire a Talent?</span>
-            </div>
+            <a href="/hiring">
+              <div className="border border-gray-700 rounded-2xl w-40 md:w-50 flex flex-col gap-4 items-center justify-center cursor-pointer py-4">
+                <img src={user} className="mt-2" />
+                <span className="font-semibold">Hire a Talent?</span>
+              </div>
+            </a>
 
-            <div className="border border-gray-700 rounded-2xl w-40 md:w-50 flex flex-col gap-4 items-center justify-center cursor-pointer py-4">
-              <img src={document} className="mt-2" />
-              <span className="font-semibold">Submit your resume</span>
-            </div>
+            <a href="/submit">
+              <div className="border border-gray-700 rounded-2xl w-40 md:w-50 flex flex-col gap-4 items-center justify-center cursor-pointer py-4">
+                <img src={document} className="mt-2" />
+                <span className="font-semibold">Submit your resume</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -59,14 +63,16 @@ const About = () => {
         />
 
         {/* Second image */}
-        <img
-          src={bg_three}
-          className="w-full md:w-[calc(50%-0.75rem)] h-auto rounded-2xl cursor-pointer object-cover"
-        />
+        <a href="/software/dev" className="block w-full md:w-[calc(50%-0.75rem)]">
+          <img
+            src={bg_three}
+            className="w-full h-auto rounded-2xl cursor-pointer object-cover"
+          />
+        </a>
       </div>
 
       {/* second slider */}
-      <div className="group relative w-full max-w-7xl overflow-hidden bg-white px-6 mx-auto mt-10 md:mt-13 rounded-2xl">
+      <div className="group relative w-full max-w-7xl overflow-hidden bg-white px-6 mx-auto mt-5 md:mt-13 rounded-2xl">
         <div className="top-0 left-0 flex items-center justify-center text-white rounded-2xl">
           <img src={bg_one} className="w-full md:w-335 rounded-2xl" />
         </div>
@@ -89,14 +95,14 @@ const About = () => {
               <span>
                 Do you have any business idea you want us to invest in?
               </span>
-              <span className="text-yellow-400 underline">Contact us</span>
+              <a href="/contact"><span className="text-yellow-400 underline cursor-pointer">Contact us</span></a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Partners */}
-      <div className="mt-16 md:mt-20">
+      <div className="mt-6 sm:mt-16 md:mt-20">
         <img src={Partners} className="w-full" />
       </div>
 
@@ -107,7 +113,10 @@ const About = () => {
 
       {/* Subscribe */}
       <div className="bg-white flex items-center justify-center px-6">
-        <img src={Subscribe} className="py-12 md:py-15 w-full md:w-auto" />
+        <img
+          src={Subscribe}
+          className="py-5 sm:py-10 md:py-15 w-full md:w-auto"
+        />
       </div>
     </div>
   );

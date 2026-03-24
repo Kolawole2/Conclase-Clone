@@ -39,13 +39,14 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <div className="flex items-center justify-center px-10 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
-                <FaRegCompass className="mr-2 text-black" />
-                <span className="text-[#0E2455]">Hire a Talent</span>
-              </div>
+              <a href="/hiring">
+                <div className="flex items-center justify-center px-10 py-4 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
+                  <FaRegCompass className="mr-2 text-black" />
+                  <span className="text-[#0E2455]">Hire a Talent</span>
+                </div>
+              </a>
 
               <div className="flex items-center justify-center px-11 py-3 rounded-full bg-white/20 cursor-pointer">
-                
                 <span>Learn a Tech skill</span>
               </div>
             </div>
@@ -95,7 +96,7 @@ const Hero = () => {
       </div>
 
       {/* Clients */}
-      <div className="w-full bg-white rounded-t-[60px] text-center mt-16 py-12">
+      <div className="w-full bg-white rounded-t-[60px] text-center mt-2 sm:mt-5 md:mt-10 py-12">
         <h2 className="text-3xl md:text-4xl font-medium">Our Clients</h2>
 
         <p className="text-gray-600 mt-4 text-sm sm:text-lg lg:text-xl px-2">
@@ -103,7 +104,7 @@ const Hero = () => {
           solutions
         </p>
 
-        <div className="flex flex-wrap justify-between items-center gap-4 mt-10 max-w-7xl mx-auto px-6">
+        <div className="flex flex-wrap justify-between items-center gap-4 md:mt-10 mt-5 max-w-7xl mx-auto px-6">
           <img src={suse} className="h-15" />
           <img src={redhat} className="h-15" />
           <img src={sage_logo} className="h-15" />

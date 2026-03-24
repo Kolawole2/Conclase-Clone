@@ -9,22 +9,22 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const DropdownLink_one = [
-    { id: 1, name: "Hire a Talent", link: "/#" },
-    { id: 2, name: "Submit a Resume", link: "/#" },
-    { id: 3, name: "Software Development", link: "/#" },
+    { id: 1, name: "Hire a Talent", link: "/hiring" },
+    { id: 2, name: "Submit a Resume", link: "/submit" },
+    { id: 3, name: "Software Development", link: "/software/dev" },
   ];
 
   const DropdownLink_two = [
-    { id: 1, name: "Candle LMS", link: "/#" },
-    { id: 2, name: "Enovate", link: "/#" },
-    { id: 3, name: "Conclase Jobs", link: "/#" },
-    { id: 4, name: "Tech Studio", link: "/#" },
+    { id: 1, name: "Candle LMS", link: "" },
+    { id: 2, name: "Enovate", link: "" },
+    { id: 3, name: "Conclase Jobs", link: "" },
+    { id: 4, name: "Tech Studio", link: "" },
   ];
 
   const DropdownLink_three = [
-    { id: 1, name: "Conclase Academy", link: "/#" },
-    { id: 2, name: "Conclase US", link: "/#" },
-    { id: 3, name: "Corporate Training", link: "/#" },
+    { id: 1, name: "Conclase Academy", link: "" },
+    { id: 2, name: "Conclase US", link: "" },
+    { id: 3, name: "Corporate Training", link: "/" },
   ];
 
   return (
@@ -109,12 +109,14 @@ const Navbar = () => {
 
         {/* Contact */}
         <div className="hidden md:px-2 md:flex flex-row justify-between gap-4">
-        <div className=" bg-[#0E2455] border-2 border-white/10 text-white font-semibold px-6 py-4 rounded-full cursor-pointer">
-          Submit a resume
-        </div>
-        <div className=" bg-white text-[#0E2455] font-medium px-7 py-4 rounded-full cursor-pointer">
-          Contact Us
-        </div>
+          <div className=" bg-[#0E2455] border-2 border-white/10 text-white font-semibold px-6 py-4 rounded-full cursor-pointer">
+            Submit a resume
+          </div>
+          <a href="/contact">
+            <div className=" bg-white text-[#0E2455] font-medium px-7 py-4 rounded-full cursor-pointer">
+              Contact Us
+            </div>
+          </a>
         </div>
 
         {/* For smaller screen */}
